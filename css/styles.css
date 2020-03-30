@@ -1,7 +1,6 @@
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
-/* purgecss end ignore */
 @tailwind utilities;
 
 @import url('https://rsms.me/inter/inter.css');
@@ -20,3 +19,5 @@ html {
 select {
   -webkit-appearance: none;
 }
+
+/* purgecss end ignore */

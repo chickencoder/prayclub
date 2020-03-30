@@ -5,7 +5,7 @@ import Button from '../components/button'
 
 const Index: React.FC = () => (
   <Page includeNav={false}>
-    <main className="max-w-lg mx-auto px-4 py-12 text-center flex flex-col items-center justify-center">
+    <main className="max-w-lg mx-auto px-4 mt-12 mb-4 text-center flex flex-col items-center justify-center">
       <Logo />
       <div className="w-full flex flex-col">
         <Button href="/about">About Us</Button>
