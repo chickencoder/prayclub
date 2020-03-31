@@ -5,7 +5,7 @@ import Page from '../components/page'
 const Tips: React.FC = () => (
   <Page>
     <div className="max-w-md mx-auto p-4">
-      <Heading>Tips for Writing Prayer Club Cards</Heading>
+      <Heading>Tips for Writing Pray Club Cards</Heading>
       <Text>
         <ol className="list-inside list-decimal">
           <li>Keep it Short</li>
