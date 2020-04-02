@@ -8,7 +8,7 @@ const Index: React.FC = () => (
     <main className="max-w-lg mx-auto px-4 mt-12 mb-4 text-center flex flex-col items-center justify-center">
       <Logo />
       <div className="w-full flex flex-col">
-        <Button href="/about">About Us</Button>
+        <Button href="/about">What is PrayClub?</Button>
         <Button href="/tips">Create a Card</Button>
       </div>
     </main>

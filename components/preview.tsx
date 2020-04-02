@@ -21,7 +21,7 @@ interface PreviewProps {
 function formatText(text: string): Array<string> {
   return text
     .toUpperCase()
-    .replace(/(?![^\n]{1,21}$)([^\n]{1,21})\s/g, '$1\n')
+    .replace(/(?![^\n]{1,19}$)([^\n]{1,19})\s/g, '$1\n')
     .split('\n')
 }
 
@@ -37,12 +37,12 @@ export const Text: React.FC<TextProps> = ({ text = '', fill }) => {
         fontFamily="Inter"
         fontSize="64"
         fontWeight="900"
-        letterSpacing="0.075em"
+        letterSpacing="0.1em"
       >
         {output &&
           output.map((text, index) => {
             return (
-              <tspan key={index} x="60" y={index * lineHeight + offsetY}>
+              <tspan key={index} x="50" y={index * lineHeight + offsetY}>
                 {text}
               </tspan>
             )
@@ -77,21 +77,21 @@ const Preview: React.FC<PreviewProps> = ({
           fontWeight="900"
           letterSpacing="0.05em"
         >
-          <tspan x="60" y={height - 95}>
+          <tspan x="50" y={height - 95}>
             PRAY&#10;
           </tspan>
-          <tspan x="60" y={height - 50}>
+          <tspan x="50" y={height - 50}>
             CLUB.
           </tspan>
         </text>
         <text
           fill={theme.footer}
           fontFamily="Inter"
-          fontSize="48"
+          fontSize="42"
           fontWeight="500"
           letterSpacing="0.05em"
         >
-          <tspan x="745" y={height - 80}>
+          <tspan x="790" y={height - 60}>
             @prayclub
           </tspan>
         </text>

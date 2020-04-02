@@ -5,12 +5,12 @@ import Page from '../components/page'
 const Tips: React.FC = () => (
   <Page>
     <div className="max-w-md mx-auto p-4">
-      <Heading>Tips for Writing Pray Club Cards</Heading>
+      <Heading>Tips for Writing PrayClub Cards</Heading>
       <Text>
         <ol className="list-inside list-decimal">
           <li>Keep it Short</li>
           <li>Keep it Simple</li>
-          <li>Keep it Biblical</li>
+          <li>Keep it Scriptural</li>
         </ol>
       </Text>
       <Text>

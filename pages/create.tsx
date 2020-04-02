@@ -1,7 +1,7 @@
 import Preview from '../components/preview'
 import Page from '../components/page'
-import Button from '../components/button'
 import Spacer from '../components/spacer'
+import Warning from '../components/warning'
 import { Heading, Text } from '../components/typography'
 import { useState, useRef, RefObject, useEffect } from 'react'
 import { CardType } from '../components/preview'
@@ -41,7 +41,7 @@ const Create: React.FC = () => {
   }
 
   return (
-    <Page>
+    <Page theme={themes[theme]}>
       <div className="max-w-md mx-auto p-4">
         <Heading>Create a Card</Heading>
         <form>
@@ -73,13 +73,13 @@ const Create: React.FC = () => {
               cols={5}
               wrap="hard"
               className="text-lg py-1 px-2 border-2 border-black w-full rounded-none"
-              placeholder="i.e. Lord, Help Us."
+              placeholder="i.e. Lord, Thank you..."
             />
           </label>
           <Spacer size={2} />
           <label>
             <span className="block text-sm font-semibold tracking-wide mb-2">
-              Colors
+              Colours
             </span>
             <select
               name="instagram"
@@ -112,10 +112,8 @@ const Create: React.FC = () => {
         >
           Download
         </button>
-        <Text className="text-center italic underline">
-          Don't forget to tag us!
-        </Text>
-        <Spacer size={2} />
+        <Spacer />
+        <Warning />
       </div>
     </Page>
   )

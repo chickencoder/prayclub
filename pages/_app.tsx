@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         buttonStyle={{
           background: '#FFFFFF',
           color: '#000000',
-          fontSize: '16px'
+          fontSize: '18px'
         }}
       >
         This website uses cookies to enhance the user experience.
