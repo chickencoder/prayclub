@@ -39,7 +39,7 @@ const Page: React.FC<PageProps> = ({
         <title>{title}</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
-      {includeNav && <Nav fg={theme.text} bg={theme.bg} />}
+      {includeNav && <Nav fg={theme && theme.text} bg={theme && theme.bg} />}
       {children}
       <Footer />
     </>

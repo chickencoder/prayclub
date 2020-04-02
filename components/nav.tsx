@@ -5,7 +5,7 @@ interface NavProps {
   bg: string
 }
 
-const Nav: React.FC<NavProps> = ({ fg, bg }) => (
+const Nav: React.FC<NavProps> = ({ fg = '', bg = '' }) => (
   <nav
     style={{ backgroundColor: bg, color: fg }}
     className="p-4 text-center bg-blood text-white mb-4"
